@@ -34,6 +34,19 @@ contract FarmContract {
         if(!hasStaked[msg.sender]) {
             stakers.push(msg.sender);
         }
+        // Staking State from user
+        isStaking[msg.sender] = true;
+        hasStaked[msg.sender] = true;
     }
+
+    // Unstake Tokens
+    function unstakeTokens() public {
+        uint balance = stakingBalance[msg.sender];
+        require(balance > 0, "You don't have tokens to unstake");
+        defiToken.transfer(msg.sender, balance);
+        stakingBalance[msg.sender] = 0;
+        isStaking[msg.sender] = false;
+    }
+
 
 }

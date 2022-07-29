@@ -161,6 +161,13 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "unstakeTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -199,11 +206,11 @@
 			]
 		},
 		"contracts/FarmContract.sol": {
-			"keccak256": "0xdb8f13269dfe131b2915289b8fd1085934e566fa5a1dd2a69e714000933076d4",
+			"keccak256": "0x869f1cd8804148bc9b3a4e6ab573f8a320165edef82f36f1f15aef840835a3e3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3ec3e6ef1882c4144d1883e5b95be402082d2501e8ad09643259d33f60591874",
-				"dweb:/ipfs/QmQmaJYGG5SrdxZgMnxR72CPBfw2FEDVY3yExNKUNxDmg6"
+				"bzz-raw://a6970d35677380383d3428bed62daf0dccb03cddfe3afcd007afac4c3b72cb1e",
+				"dweb:/ipfs/QmbTMj944NPheRS8mw8dZjxQE2icAxfWh7sNBo1y9c2Dt7"
 			]
 		},
 		"contracts/RewardDEFIToken.sol": {
