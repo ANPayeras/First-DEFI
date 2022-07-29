@@ -17,6 +17,11 @@ contract FarmContract {
     mapping(address => bool) public hasStaked;
     mapping(address => bool) public isStaking;
 
+    modifier onlyOwner{
+        require(msg.sender == owner, "You aren't the owner");
+        _;
+    }
+
     constructor(DefiToken _defiToken, RewardDEFIToken _rewardDefiToken) {
         defiToken = _defiToken;
         rewardDefiToken = _rewardDefiToken;
@@ -46,6 +51,17 @@ contract FarmContract {
         defiToken.transfer(msg.sender, balance);
         stakingBalance[msg.sender] = 0;
         isStaking[msg.sender] = false;
+    }
+
+    // Tokens issue
+    function issueTokens() public onlyOwner {
+        for (uint i = 0; i < stakers.length; i++) {
+            address recipient = stakers[i];
+            uint balance = stakingBalance[recipient];
+            if (balance > 0) {
+                rewardDefiToken.transfer(recipient, balance);
+            }
+        }
     }
 
 
