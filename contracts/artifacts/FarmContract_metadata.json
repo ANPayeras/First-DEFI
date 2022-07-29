@@ -1,0 +1,219 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "contract DefiToken",
+						"name": "_defiToken",
+						"type": "address"
+					},
+					{
+						"internalType": "contract RewardDEFIToken",
+						"name": "_rewardDefiToken",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "defiToken",
+				"outputs": [
+					{
+						"internalType": "contract DefiToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "hasStaked",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "isStaking",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rewardDefiToken",
+				"outputs": [
+					{
+						"internalType": "contract RewardDEFIToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "stakeTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "stakers",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "stakingBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/FarmContract.sol": "FarmContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DEFIToken.sol": {
+			"keccak256": "0x541afc8bf660ab7315ffa75f0bbc5b24ae6200b40f12b4347f4b1d3e34de0906",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a4d3b1edb4638ccef6ed813e3bfa085a70fc0c6694e19e94390c2e59d367aa6",
+				"dweb:/ipfs/QmXdFYQ1rVA7cKai8Y2a8xmQcA896JWYmBVLmud3h6uJ71"
+			]
+		},
+		"contracts/FarmContract.sol": {
+			"keccak256": "0xdb8f13269dfe131b2915289b8fd1085934e566fa5a1dd2a69e714000933076d4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ec3e6ef1882c4144d1883e5b95be402082d2501e8ad09643259d33f60591874",
+				"dweb:/ipfs/QmQmaJYGG5SrdxZgMnxR72CPBfw2FEDVY3yExNKUNxDmg6"
+			]
+		},
+		"contracts/RewardDEFIToken.sol": {
+			"keccak256": "0x63e5b23403a72dd582bd4bcf7eec3e9be445ed35e2cab4f6215766bd2b5f3060",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d5eaa57d64acac71151770e3699f5a11dff21d3f37573093c9e9fc738f086cb7",
+				"dweb:/ipfs/QmejH7h3xEgau1yUXt5dkCuUozMh68jjq1M9rRgojLMmBN"
+			]
+		}
+	},
+	"version": 1
+}
